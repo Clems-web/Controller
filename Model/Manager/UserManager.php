@@ -22,7 +22,7 @@ class UserManager {
     // Get User by Id
     public function getById(int $id){
         $user = [];
-        $request = DB::getInstance()->prepare("SELECT * FROM user AS u WHERE u.id = :id");
+        $request = DB::getInstance()->prepare("SELECT * FROM user WHERE id = :id");
         $request->bindValue(':id', $id);
         $result = $request->execute();
         if($result) {

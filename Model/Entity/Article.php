@@ -1,7 +1,5 @@
 <?php
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Model/DB.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Model/Entity/Article.php';
 
 
 class Article {
